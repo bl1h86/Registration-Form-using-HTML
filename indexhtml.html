@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form action="" method="POST">
+        <fieldset>
+            <label for="first-name">Enter Your First Name: <input name="first-name" placeholder="John" id="first-name"
+                                                                  type="text" required /></label>
+            <label for="last-name">Enter Your Last Name: <input name="last-name" placeholder="Wick" id="last-name" 
+                                                                type="text" required />
+          </label>
+            <label for="email">Enter Your Email: <input name="email" placeholder="keanureeves@hotmail.com" id="email"
+                                                        type="email" required />
+          </label>
+            <label for="new-password">Create a New Password: <input name="new-password" placeholder="min 8 characters(a-z,0-9)" id="new-password" type="password" pattern="[a-z0-9]{8,}" required /></label>
+        </fieldset>
+        <fieldset>
+            <legend>Account type (required)</legend>
+            <label for="personal-account"><input class="inline" id="personal-account" type="radio" name="account-type" checked /> Personal</label>
+            <label for="business-account"><input class="inline" id="business-account" type="radio" name="account-type" /> Business</label>
+        </fieldset>
+        <fieldset>
+            <label for="profile-picture">Upload a profile picture: 
+              <input name="profile-picture" id="profile-picture" type="file" /></label>
+            <label for="age">Input your age (years): <input name="age" id="age" type="number" min="13" max="120">
+                <label for="referrer">How did you hear about us?
+                    <select name= "referrer" id="referrer">
+                        <option value="">(select one)</option>
+                        <option value="1">Instagram</option>
+                        <option value="2">Facebook</option>
+                        <option value="3">X(twitter)</option>
+                        <option value="4">Youtube</option>
+                    </select>
+                </label>
+        </fieldset>
+        <label for="terms-and-conditions"><input class="inline" name="checkbox" id="terms-and-conditions" type="checkbox" required />I accept the <a href="terms-&-c0ndn link">terms and conditions</a>
+        </label>
+        <input type="Submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
